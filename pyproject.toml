@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cython-raytracer"
+version = "0.1.0"
+description = "A Raytracer based on Cython 3.0"
+authors = ["Tiago Antao <tiago@tiago.org>"]
+readme = "README.md"
+
+[tool.poetry.build]
+generate-setup-file = true
+script = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+cython = "^3.0.5"
+pillow = "^10.1.0"
+numpy = "^1.26.2"
+typer = "^0.9.0"
+
+[build-system]
+requires = ["setuptools", "poetry-core>=1.8.1", "Cython>=3.0.5"]
+build-backend = "poetry.core.masonry.api"
